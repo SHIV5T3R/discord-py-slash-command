@@ -103,6 +103,7 @@ class SlashContext:
                    allowed_mentions: discord.AllowedMentions = None,
                    hidden: bool = False,
                    delete_after: float = None) -> model.SlashMessage:
+                   
         """
         Sends response of the slash command.
 
@@ -192,3 +193,13 @@ class SlashContext:
             "flags": 64
         }
         return self._http.post(base, False, self.bot.user.id, self.interaction_id, self.__token)
+    def reply(self, reference:int, content, embeds, allowed mentions):
+        base = {
+            "reference": reference,
+            "content": content,
+            "embeds": [x.to_dict() for x in embeds] if embeds else [],
+            "allowed_mentions": allowed_mentions.to_dict() if allowed_mentions
+        }
+        return self. #brb im gonna go get food lol#
+            
+            
