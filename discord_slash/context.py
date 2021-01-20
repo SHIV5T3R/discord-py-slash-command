@@ -193,7 +193,7 @@ class SlashContext:
             "flags": 64
         }
         return self._http.post(base, False, self.bot.user.id, self.interaction_id, self.__token)
-    def reply(self, reference:int, content, embeds, allowed mentions):
+    async def reply(self, reference:int, content, embeds, allowed mentions):
         base = {
             "reference": reference,
             "content": content,
