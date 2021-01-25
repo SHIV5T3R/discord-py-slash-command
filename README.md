@@ -1,3 +1,7 @@
+fork to start the base of breaking changes including:
+Slash command visibility
+other stuff too but i forgot..
+
 <p align="center">
     <br>
     <a href="https://pypi.org/project/discord-py-slash-command/"><img src="/.github/discordpyslashlogo.png" alt="discord-py-slash-command" height="128"></a>
